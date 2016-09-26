@@ -96,7 +96,16 @@ li {
 /*** Content ***/
 .content {
   padding: 10px;
-  height: 800px;
+  margin-bottom: 50px;
+}
+.row-home {
+  margin-bottom: 25px;
+}
+.home-box {
+  font-color: black;
+}
+.home-box h4 {
+  text-align: center;
 }
 article > h1,p {
   color: black;
@@ -126,7 +135,7 @@ article > h1,p {
   transition: all 0.3s ease-in-out;
 }
 .row div.is-showing {
-  opacity: 0.5;
+  opacity: 0.3;
   transform: translateX(0px);
 }
 .contact-form {
