@@ -109,24 +109,32 @@ article > h1,p {
 #about, #work, #contact {
   width: 100%;
   position: relative;
-  border: 2px solid #3F0C1F;
+  color: white;
   overflow: hidden;
 }
 #about:hover, #work:hover, #contact:hover {
+  border: 2px solid #333;
   box-shadow: 0 1px 5px 1px #cccccc;
+  background-color: #a9a9a9;
   text-decoration: none;
   cursor:pointer
 }
-#about span, #work span, #contact span {
+#about h4, #work h4, #contact h4 {
   position: relative;
+  text-align: center;
   text-transform: uppercase;
-  background-color: #000;
   color: #fff;
-  opacity: .8;
 }
 /*** About ***/
 .content h3 {
   text-align: center;
+}
+#row-about {
+  margin-bottom: 25px;
+}
+#boy {
+  background: url("../images/boy.jpeg") no-repeat;
+  background-position: center;
 }
 /*** Work, Box and Row ***/
 .services {
@@ -134,7 +142,11 @@ article > h1,p {
   align: center;
   background: url(" ");
 }
-
+.apps {
+  margin-top: 0px;
+  margin-bottom: 10px;
+  text-align: center;
+}
 .countdown{
   position: relative;
   border: 1px solid white;
@@ -152,26 +164,40 @@ article > h1,p {
   padding: 5px;  
   float: left;
   border: 1px solid #fff;
-  background: black;
+  background: #555;
   border-radius: 5px;
 }
 .box a {
   top: 90px;
   right: 145px;
 }
-.row div {
+.fadein div {
   position: relative;
   opacity: 0;
   transform: translateX(20px);
   transition: all 0.3s ease-in-out;
 }
-.row div.is-showing {
-  opacity: 0.3;
+.fadein div.is-showing {
+  opacity: 0.4;
   transform: translateX(0px);
 }
 /*** Contact ***/
 .contact-form {
   margin: 40px 10px 40px 10px;
+}
+.contact-form:hover {
+  background-color: #c1c1c1;
+  border-radius: 5px;
+}
+.row {
+  margin-bottom: 10px;
+}
+.ebox:hover {
+  border: 2px solid #333;
+  box-shadow: 0 1px 5px 1px #cccccc;
+  background-color: #a9a9a9;
+  text-decoration: none;
+  cursor:pointer
 }
 /*** Footer ***/
 .footer {
